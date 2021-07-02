@@ -8,13 +8,13 @@ public class WebPage {
     private String id;
 
     private String topicTitle;
-    private int topicCount;
+    private String topicCount;
     private String topicBody;
     private String topicLink;
     private Boolean viewed;
 
-    public WebPage(String id, String topicTitle, int topicCount, String topicBody, String topicLink, Boolean viewed) {
-        this.id = id;
+    public WebPage( String topicCount,String topicTitle, String topicBody, String topicLink, Boolean viewed) {
+
         this.topicTitle = topicTitle;
         this.topicCount = topicCount;
         this.topicBody = topicBody;
@@ -38,11 +38,11 @@ public class WebPage {
         this.topicTitle = topicTitle;
     }
 
-    public int getTopicCount() {
+    public String getTopicCount() {
         return topicCount;
     }
 
-    public void setTopicCount(int topicCount) {
+    public void setTopicCount(String topicCount) {
         this.topicCount = topicCount;
     }
 
